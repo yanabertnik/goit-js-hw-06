@@ -9,10 +9,12 @@ function handleSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    alert ("Всі поля повинні бути заповнені!");
+    return alert ("Всі поля повинні бути заповнені!");
   }
+  
 
 const userDetails = { email: email.value, password: password.value };
   console.log(userDetails);
   event.currentTarget.reset();
-}
+  }
+
